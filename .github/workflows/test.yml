@@ -1,0 +1,16 @@
+name: Integration kit
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  node:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: examples/express-chat/package-lock.json
+      - run: npm ci --prefix examples/express-chat --ignore-scripts
+      - run: node --test packages/node/test.mjs examples/express-chat/test.mjs
