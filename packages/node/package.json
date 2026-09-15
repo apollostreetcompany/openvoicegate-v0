@@ -1,0 +1,5 @@
+{
+  "name": "@openvoicegate/node", "version": "0.1.0-alpha.1", "type": "module",
+  "private": true, "license": "Apache-2.0", "exports": "./index.mjs",
+  "engines": {"node": ">=22"}, "scripts": {"test": "node --test test.mjs"}
+}

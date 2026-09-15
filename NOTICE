@@ -1,0 +1,7 @@
+OpenVoiceGate public integration kit
+Copyright 2026 Open Voice Gate contributors
+
+This site's code, documentation and integration examples are offered under
+the Apache License 2.0. The separately hosted voice verifier is not included.
+No model weights, recorded voices, biometric templates or private keys
+are distributed with this repository.

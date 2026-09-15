@@ -1,0 +1,17 @@
+node_modules/
+.venv/
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+.wrangler/
+.private/
+artifacts/
+*.sqlite*
+*.db
+*.wav
+*.aiff
+*.flac
+*.webm
+.DS_Store
