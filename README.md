@@ -22,7 +22,7 @@ npm ci --prefix examples/express-chat --ignore-scripts
 node --env-file=/absolute/private/path/rp.env examples/express-chat/server.mjs
 ```
 
-The environment file must contain your real registered-client configuration; it is not supplied by the command. Client registration is currently operator-managed. A browser button alone does not gate content: your server must check sessions and moderation before protected reads and writes.
+The environment file must contain your real registered-client configuration; it is not supplied by the command. Client registration is currently operator-managed; [request a pilot integration](https://github.com/apollostreetcompany/openvoicegate-v0/issues/new?template=integration-request.yml). Requests are public, so do not include secrets or voice data. A browser button alone does not gate content: your server must check sessions and moderation before protected reads and writes.
 
 ## Integration and validation
 
