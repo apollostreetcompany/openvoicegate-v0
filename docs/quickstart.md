@@ -16,6 +16,8 @@ npm ci --prefix examples/express-chat --ignore-scripts
 
 ## 2. Register your site
 
+[Request a pilot integration](https://github.com/apollostreetcompany/openvoicegate-v0/issues/new?template=integration-request.yml). Include your public site URL and intended callback, or say that you want to try the localhost example. Requests are public: do not include credentials, recordings, personal profile details, or private URLs. The operator will arrange a private channel before issuing credentials. Registration is reviewed manually; submitting a request does not enable access.
+
 For the local example, ask the verifier operator to register `http://127.0.0.1:8022` as the site origin and `http://127.0.0.1:8022/callback` as the exact callback. You need an approved issuer origin, client ID, client secret, signing-key ID, and model ID. HTTPS is required for non-loopback sites.
 
 Keep the client secret on your server. The verifier and relying site must use different hostnames; two ports on one hostname do not isolate cookies.

@@ -1,0 +1,36 @@
+name: Pilot integration request
+description: Ask to connect your chat or forum to the experimental hosted verifier.
+title: "Pilot integration: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This request is public. Do not post secrets, recordings, profile information, or private URLs.
+        Client registration is manual. The operator will arrange a private channel before issuing credentials.
+        The verifier is experimental: accurate identification, human presence, and dependable ban-evasion prevention are not established.
+  - type: textarea
+    id: community
+    attributes:
+      label: What are you building?
+      description: Describe your chat or forum and the voice-entry journey you want to try.
+    validations:
+      required: true
+  - type: input
+    id: public-site
+    attributes:
+      label: Public site URL
+      description: A public URL, or "localhost example". Omit any private URL.
+    validations:
+      required: true
+  - type: input
+    id: callback
+    attributes:
+      label: Intended public callback URL
+      description: For the local example, use http://127.0.0.1:8022/callback. Never include tokens or credentials.
+  - type: textarea
+    id: pilot-size
+    attributes:
+      label: Expected pilot size and devices
+      description: Approximate participants, browsers, and devices. The current service has one active verification slot.
+    validations:
+      required: true
